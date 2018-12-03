@@ -1,7 +1,7 @@
 <h1>お気に入り一覧</h1>
 
 <ul class="media-list">
-  <% @likes.each do |micropost| %>
+  <% @posts_liked.each do |micropost| %>
     <li class="media">
       <div class="media-left">
         <img class="media-object img-rounded" src="<%= gravatar_url(micropost.user, { size: 50 }) %>" alt="">
